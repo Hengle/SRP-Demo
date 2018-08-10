@@ -1,15 +1,15 @@
-﻿Shader "Demo02/Unlit"
+﻿Shader "Custom/Demo02 - Unlit"
 {
 	Properties
 	{
 		_Color("Color Tint", Color) = (0.5,0.5,0.5)
 	}
 
-HLSLINCLUDE
+		HLSLINCLUDE
 
 #include "UnityCG.cginc"
 
-	uniform float4 _Color;
+		uniform float4 _Color;
 
 	struct a2v
 	{
@@ -35,9 +35,9 @@ HLSLINCLUDE
 		return fragColor;
 	}
 
-ENDHLSL
+		ENDHLSL
 
-SubShader
+		SubShader
 	{
 		Tags{ "Queue" = "Geometry" }
 			LOD 100
